@@ -5,7 +5,7 @@ Home: https://rattle.togaware.com/
 
 Package license: GPL-2.0-or-later
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rattle-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rattle-feedstock/blob/main/LICENSE.txt)
 
 Summary: The R Analytic Tool To Learn Easily (Rattle) provides a collection of utilities functions for the data scientist. A Gnome (RGtk2) based graphical interface is included with the aim to provide a simple and intuitive introduction to R for data science, allowing a user to quickly load data from a CSV file (or via ODBC), transform and explore the data, build and evaluate models, and export models as PMML (predictive modelling markup language) or as scores. A key aspect of the GUI is that all R commands are logged and commented through the log tab. This can be saved as a standalone R script file and as an aid for the user to learn R or to copy-and-paste directly into R itself.
 
@@ -15,8 +15,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11118&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-rattle-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11118&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-rattle-feedstock?branchName=main">
       </a>
     </td>
   </tr>
@@ -55,7 +55,8 @@ conda search r-rattle --channel conda-forge
 About conda-forge
 =================
 
-[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
+[![Powered by
+NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](https://numfocus.org)
 
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the
