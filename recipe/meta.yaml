@@ -17,16 +17,23 @@ build:
   rpaths:
     - lib/R/lib/
     - lib/
+  missing_dso_whitelist:
+    - '*/R.dll'        # [win]
+    - '*/Rblas.dll'    # [win]
+    - '*/Rlapack.dll'  # [win]
 
 requirements:
   build:
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
     - r-xml
     - r-bitops
     - r-dplyr
     - r-ggplot2
+    - r-jsonlite
+    - r-lubridate
     - r-magrittr
     - r-rpart.plot
     - r-stringi
@@ -39,6 +46,8 @@ requirements:
     - r-bitops
     - r-dplyr
     - r-ggplot2
+    - r-jsonlite
+    - r-lubridate
     - r-magrittr
     - r-rpart.plot
     - r-stringi
@@ -52,7 +61,7 @@ test:
     - "\"%R%\" -e \"library('rattle')\""  # [win]
 
 about:
-  home: https://rattle.togaware.com/
+  home: https://togaware.com/projects/rattle/
   license: GPL-2.0-or-later
   summary: The R Analytic Tool To Learn Easily (Rattle) provides a collection of utilities functions for the data scientist. A Gnome (RGtk2) based graphical interface is included with the aim to provide a simple and intuitive introduction to R for data science, allowing a user to quickly load data from a CSV file (or 
     via ODBC), transform and explore the data, build and evaluate models, and export models as PMML (predictive modelling markup language) or as scores. A key aspect of the GUI is that all R commands are logged and commented through the log tab. This can be saved as a standalone R script file and as an aid for the user
