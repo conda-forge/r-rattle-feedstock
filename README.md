@@ -3,7 +3,7 @@ About r-rattle-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rattle-feedstock/blob/main/LICENSE.txt)
 
-Home: https://rattle.togaware.com/
+Home: https://togaware.com/projects/rattle/
 
 Package license: GPL-2.0-or-later
 
